@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Life Hub | Everything for your university journey</title>
+  <meta name="description" content="Learn with free roadmaps, organize your studies, find opportunities and connect with other students, all in one place.">
+  <meta name="theme-color" content="#f4f6fb">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Student Life Hub">
+  <meta property="og:description" content="Everything you need for your university journey, in one place.">
+  <meta property="og:type" content="website">
+
+  <!-- Scripts & Stylesheets -->
+  <script src="js/theme-init.js"></script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo__mark" aria-hidden="true"></span>
+        Student Life Hub
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="#platform">Platform</a>
+        <a class="nav__link" href="#tracks">Tracks</a>
+        <a class="nav__link" href="#opportunities">Opportunities</a>
+        <a class="nav__link" href="#events">Events</a>
+      </nav>
+
+      <div class="nav__end">
+        <button type="button" class="btn btn--ghost btn--icon theme-toggle" data-theme-toggle aria-label="Toggle theme">
+          <i class="icon i-moon" data-icon="moon"></i>
+          <i class="icon i-sun" data-icon="sun"></i>
+        </button>
+
+        <div class="nav__actions">
+          <a class="btn btn--ghost btn--sm" href="pages/auth/login.html">Log in</a>
+          <a class="btn btn--primary btn--sm" href="pages/auth/register.html">Get started</a>
+        </div>
+
+        <button type="button" class="btn btn--ghost btn--icon nav__toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <i class="icon" data-icon="menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav__menu" id="mobile-menu" hidden>
+      <div class="container">
+        <a class="nav__link" href="#platform">Platform</a>
+        <a class="nav__link" href="#tracks">Tracks</a>
+        <a class="nav__link" href="#opportunities">Opportunities</a>
+        <a class="nav__link" href="#events">Events</a>
+        <div class="form-grid form-grid--2 u-mt-3">
+          <a class="btn" href="pages/auth/login.html">Log in</a>
+          <a class="btn btn--primary" href="pages/auth/register.html">Get started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <div class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <h1 id="hero-title">Everything you need for your university journey, in one place.</h1>
+          <p class="lead">Learn with free roadmaps, keep classes and tasks organized, find internships and events that fit your skills, and connect with other students.</p>
+          <div class="cluster">
+            <a class="btn btn--primary btn--lg" href="pages/auth/register.html">Get started</a>
+            <a class="btn btn--lg" href="#platform">Explore platform</a>
+          </div>
+          <p class="small muted u-mt-4">Free for students. Demo content is fictional.</p>
+        </div>
+
+        <!-- Dashboard Visual Preview -->
+        <div class="hero__visual">
+          <div class="card day">
+            <div class="cluster u-flex-between u-items-start">
+              <div>
+                <p class="small muted">Tuesday, 9:02 AM</p>
+                <p class="display-title">Good morning</p>
+              </div>
+              <span class="badge badge--accent">🔥 12-day streak</span>
+            </div>
+
+            <ul class="schedule reset">
+              <li>
+                <time>10:00</time>
+                <div class="slot slot--done">
+                  <strong>Database lecture</strong>
+                  <span>Hall B</span>
+                </div>
+              </li>
+              <li>
+                <time>14:00</time>
+                <div class="slot">
+                  <strong>Web Development lab</strong>
+                  <span>Lab 3</span>
+                </div>
+              </li>
+              <li>
+                <time>17:00</time>
+                <div class="slot">
+                  <strong>Study session: SQL joins</strong>
+                  <span>Database Study Group</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="card__footer">
+              <div class="row-between text-sm u-mb-2">
+                <span>Frontend Development</span>
+                <b class="brand-text">80%</b>
+              </div>
+              <div class="progress">
+                <span style="--v:80%"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card match">
+            <div class="score">
+              <b>92%</b>
+              <span>match</span>
+            </div>
+            <div>
+              <strong class="text-sm">Frontend Development Intern</strong>
+              <p class="small muted">Hybrid · Deadline Oct 24</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="row-between text-sm">
+              <span>Level 12 · Builder</span>
+              <b>2,450 XP</b>
+            </div>
+            <div class="progress progress--accent u-mt-2">
+              <span style="--v:88%"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Platform Features Section -->
+    <section class="section container" id="platform" aria-labelledby="platform-title">
+      <h2 id="platform-title">What can you do?</h2>
+      <p class="lead u-mt-2">Five things students juggle across a dozen apps, now in one place that knows where you are in your studies.</p>
+      
+      <div class="pillars">
+        <article class="pillar pillar--learn">
+          <span class="pillar__icon"><i class="icon" data-icon="book"></i></span>
+          <h3 class="pillar__title">Learn</h3>
+          <p>Pick a track, follow a clear roadmap, and learn from free videos, docs and practice projects. Your progress is saved at every stage.</p>
+        </article>
+
+        <article class="pillar">
+          <span class="pillar__icon"><i class="icon" data-icon="target"></i></span>
+          <h3>Build your career</h3>
+          <p class="muted">Internships, jobs, scholarships and hackathons, ranked by how well they fit your skills.</p>
+        </article>
+
+        <article class="pillar">
+          <span class="pillar__icon"><i class="icon" data-icon="users"></i></span>
+          <h3>Connect</h3>
+          <p class="muted">Ask questions, join study groups and follow your university clubs.</p>
+        </article>
+
+        <article class="pillar pillar--tools">
+          <span class="pillar__icon"><i class="icon" data-icon="wrench"></i></span>
+          <h3>Stay organized</h3>
+          <p>Tasks, calendar, Pomodoro timer, GPA calculator and notes.</p>
+        </article>
+
+        <article class="pillar">
+          <span class="pillar__icon"><i class="icon" data-icon="sparkles"></i></span>
+          <h3>AI Assistant</h3>
+          <p class="muted">Study plans and career guidance based on your own progress (coming soon).</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tracks Section -->
+    <div class="section--surface section" id="tracks">
+      <div class="container">
+        <h2>Explore your path</h2>
+        <p class="lead u-mt-2">Every track has several roadmaps, so you can choose the route that fits your goal.</p>
+        <ul class="tracks" id="tracks-list"></ul>
+      </div>
+    </div>
+
+    <!-- Opportunities Section -->
+    <section class="section container" id="opportunities">
+      <div class="cluster u-flex-between u-items-end">
+        <div>
+          <h2>Latest opportunities</h2>
+          <p class="lead u-mt-2">Each one shows how well it fits your skills.</p>
+        </div>
+        <a class="btn" href="pages/auth/register.html">See all</a>
+      </div>
+      <div class="opps" id="opps-list"></div>
+    </section>
+
+    <!-- Events Section -->
+    <div class="section--surface section" id="events">
+      <div class="container split u-items-start">
+        <div>
+          <h2>Upcoming events</h2>
+          <p class="lead u-mt-2">Workshops, hackathons and career talks from your university and its clubs.</p>
+        </div>
+        <ul class="events reset" id="events-list"></ul>
+      </div>
+    </div>
+
+    <!-- Journey Steps -->
+    <section class="section container" aria-labelledby="journey-title">
+      <h2 id="journey-title">Why Student Life Hub?</h2>
+      <div class="chips u-mt-5 u-gap-3">
+        <span class="chip chip--brand chip--lg">Discover</span>
+        <span aria-hidden="true">→</span>
+        <span class="chip chip--brand chip--lg">Learn</span>
+        <span aria-hidden="true">→</span>
+        <span class="chip chip--brand chip--lg">Build</span>
+        <span aria-hidden="true">→</span>
+        <span class="chip chip--brand chip--lg">Apply</span>
+        <span aria-hidden="true">→</span>
+        <span class="chip chip--brand chip--lg">Connect</span>
+        <span aria-hidden="true">→</span>
+        <span class="chip chip--accent chip--lg">Grow</span>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="container u-pb-8" aria-labelledby="cta-title">
+      <div class="cta">
+        <h2 id="cta-title">Start with the next thing you need to learn.</h2>
+        <p>Create your free account and get your own dashboard, roadmap and profile.</p>
+        <div class="cluster">
+          <a class="btn btn--accent btn--lg" href="pages/auth/register.html">Create your free account</a>
+          <a class="btn btn--inverse btn--lg" href="#tracks">Browse tracks</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="index.html">
+            <span class="logo__mark" aria-hidden="true"></span>
+            Student Life Hub
+          </a>
+          <p class="small muted u-mt-3 u-max-w-xs">One place for studying, learning, opportunities and community.</p>
+        </div>
+        <div>
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#tracks">Tracks</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Account</h3>
+          <ul>
+            <li><a href="pages/auth/login.html">Log in</a></li>
+            <li><a href="pages/auth/register.html">Create account</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__legal">© 2026 Student Life Hub. Demo content is fictional.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/icons.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>

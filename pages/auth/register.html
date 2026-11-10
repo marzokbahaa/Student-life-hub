@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create account | Student Life Hub</title>
+<meta name="description" content="Student Life Hub: learn, organize, find opportunities and connect, all in one place.">
+<meta name="theme-color" content="#f4f6fb">
+<meta property="og:title" content="Create account | Student Life Hub"><meta property="og:description" content="Student Life Hub: learn, organize, find opportunities and connect, all in one place."><meta property="og:type" content="website">
+<script src="../../js/theme-init.js"></script>
+<link rel="stylesheet" href="../../css/variables.css"><link rel="stylesheet" href="../../css/base.css"><link rel="stylesheet" href="../../css/components.css"><link rel="stylesheet" href="../../css/layout.css"><link rel="stylesheet" href="../../css/pages.css">
+</head>
+<body data-guard="guest">
+<a class="skip-link" href="#main">Skip to content</a>
+<main class="auth" id="main">
+  <div class="auth__top"><a class="logo" href="../../index.html"><span class="logo__mark" aria-hidden="true"></span>Student Life Hub</a>
+  <button type="button" class="btn btn--ghost btn--icon theme-toggle" data-theme-toggle><i class="icon i-moon" data-icon="moon"></i><i class="icon i-sun" data-icon="sun"></i></button></div>
+  <section class="card auth__card" aria-labelledby="t">
+    <div><h1 id="t">Create your account</h1><p class="muted">Free for students. Takes about a minute.</p></div>
+    <div id="form-alert" class="alert" role="alert" hidden><i class="icon" data-icon="info"></i><span></span></div>
+    <form data-form="register" class="form-grid" novalidate>
+      <div class="field"><label class="field__label" for="name">Full name</label><input class="input" id="name" type="text" autocomplete="name" ><p class="field__error"></p></div>
+      <div class="field"><label class="field__label" for="email">Email</label><input class="input" id="email" type="email" autocomplete="email" ><p class="field__error"></p></div>
+      <div class="field"><label class="field__label" for="password">Password</label><div class="input-wrap"><input class="input" id="password" type="password" autocomplete="new-password"><button type="button" data-toggle-password="password" aria-label="Show password"><i class="icon" data-icon="eye"></i></button></div><p class="field__error"></p><ul class="reqs" id="pw-rules" aria-label="Password requirements"></ul></div>
+      <div class="field"><label class="field__label" for="confirm">Confirm password</label><div class="input-wrap"><input class="input" id="confirm" type="password" autocomplete="new-password"><button type="button" data-toggle-password="confirm" aria-label="Show password"><i class="icon" data-icon="eye"></i></button></div><p class="field__error"></p></div>
+      <div class="form-grid form-grid--2">
+      <div class="field"><label class="field__label" for="university">University</label><input class="input" id="university" type="text" autocomplete="organization" ><p class="field__error"></p></div>
+      <div class="field"><label class="field__label" for="major">Major</label><select class="select" id="major"><option value="">Choose your major…</option></select><p class="field__error"></p></div>
+      </div>
+      <div class="field"><label class="field__label" for="year">Academic year</label><select class="select" id="year"><option value="">Choose…</option><option>First year</option><option>Second year</option><option>Third year</option><option>Fourth year</option><option>Fifth year or more</option><option>Graduate</option></select><p class="field__error"></p></div>
+      <div class="field"><label class="check"><input type="checkbox" id="terms"> <span>I agree to the Terms and Privacy Policy (demo text).</span></label><p class="field__error">Please accept the terms to continue.</p></div>
+      <button type="submit" class="btn btn--primary btn--lg btn--block">Create account</button>
+    </form>
+    <p class="small muted" style="text-align:center">Already have an account? <a style="color:var(--brand-text);font-weight:600" href="login.html">Log in</a></p>
+    <p class="small muted" style="text-align:center">Demo mode: accounts are stored only in this browser and are not secure.</p>
+  </section>
+</main>
+<script src="../../js/icons.js"></script>
+<script src="../../js/core.js"></script>
+<script src="../../js/data.js"></script>
+<script src="../../js/learning.data.js"></script>
+<script src="../../js/profile.store.js"></script>
+<script src="../../js/auth.service.js"></script>
+<script src="../../js/auth-pages.js"></script>
+</body>
+</html>

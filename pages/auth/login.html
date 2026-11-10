@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in | Student Life Hub</title>
+<meta name="description" content="Student Life Hub: learn, organize, find opportunities and connect, all in one place.">
+<meta name="theme-color" content="#f4f6fb">
+<meta property="og:title" content="Log in | Student Life Hub"><meta property="og:description" content="Student Life Hub: learn, organize, find opportunities and connect, all in one place."><meta property="og:type" content="website">
+<script src="../../js/theme-init.js"></script>
+<link rel="stylesheet" href="../../css/variables.css"><link rel="stylesheet" href="../../css/base.css"><link rel="stylesheet" href="../../css/components.css"><link rel="stylesheet" href="../../css/layout.css"><link rel="stylesheet" href="../../css/pages.css">
+</head>
+<body data-guard="guest">
+<a class="skip-link" href="#main">Skip to content</a>
+<main class="auth" id="main">
+  <div class="auth__top"><a class="logo" href="../../index.html"><span class="logo__mark" aria-hidden="true"></span>Student Life Hub</a>
+  <button type="button" class="btn btn--ghost btn--icon theme-toggle" data-theme-toggle><i class="icon i-moon" data-icon="moon"></i><i class="icon i-sun" data-icon="sun"></i></button></div>
+  <section class="card auth__card" aria-labelledby="t">
+    <div><h1 id="t">Welcome back</h1><p class="muted">Sign in to continue your student journey.</p></div>
+    <div id="form-alert" class="alert" role="alert" hidden><i class="icon" data-icon="info"></i><span></span></div>
+    <form data-form="login" class="form-grid" novalidate>
+      <div class="field"><label class="field__label" for="email">Email</label><input class="input" id="email" type="email" autocomplete="email" ><p class="field__error"></p></div>
+      <div class="field"><label class="field__label" for="password">Password</label><div class="input-wrap"><input class="input" id="password" type="password" autocomplete="current-password"><button type="button" data-toggle-password="password" aria-label="Show password"><i class="icon" data-icon="eye"></i></button></div><p class="field__error"></p></div>
+      <div class="cluster" style="justify-content:space-between"><label class="check"><input type="checkbox" id="remember"> Remember me</label><a class="small" style="color:var(--brand-text)" href="forgot-password.html">Forgot password?</a></div>
+      <button type="submit" class="btn btn--primary btn--lg btn--block">Sign in</button>
+    </form>
+    <p class="small muted" style="text-align:center">New here? <a style="color:var(--brand-text);font-weight:600" href="register.html">Create an account</a></p>
+    <p class="small muted" style="text-align:center">Demo mode: accounts are stored only in this browser and are not secure.</p>
+  </section>
+</main>
+<script src="../../js/icons.js"></script>
+<script src="../../js/core.js"></script>
+<script src="../../js/data.js"></script>
+<script src="../../js/profile.store.js"></script>
+<script src="../../js/auth.service.js"></script>
+<script src="../../js/auth-pages.js"></script>
+</body>
+</html>
